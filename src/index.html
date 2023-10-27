@@ -5,50 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <title>Gsap Playground</title>
-    
 </head>
 <body class="bg-gray-50">
     <main class="container mx-auto min-h-screen flex flex-col">
 
         <header class="flex justify-between pt-8 font-bold">
-            <div class="logo">OMEGA</div>
-            <nav class="flex gap-8 uppercase text-md"
-                <a href="">Collection</a>
-                <a href="">Products</a>
-                <a href="">Offers</a>
-                <a href="">Contact</a>
-                <button>
+            <div class="logo nav-item">OMEGA</div>
+            <nav class="flex gap-8 uppercase text-md">
+                <a href="" class="nav-item">Collection</a>
+                <a href="" class="nav-item">Products</a>
+                <a href="" class="nav-item">Offers</a>
+                <a href="" class="nav-item">Contact</a>
+                <button class="nav-item">
                     <input type="text" class="bg-gray-50 w-24">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button>
+                <button class="nav-item">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </nav>
         </header>
         <article class="flex items-end justify-between relative">
-            <div class="font-bold">2023</div>
+            <div class="font-bold year">2023</div>
             <div class="flex items-center">
                 <figure class="w-1/2 relative z-10">
                     <img src="https://raw.githubusercontent.com/Pd0420/Animated-Moonwatch-Website-Landing-Page/main/watch.png" alt="">
-                    <div class="line border-l-[16px] absolute left-[48%] -top-14 -z-10 border-red-600 min-h-screen"></div>
-                    <div class="line border-l-[24px] absolute left-[52%] -top-14 -z-10 border-blue-800 h-screen"></div>
+                    <div class="line line-one border-l-[16px] absolute left-[48%] -top-14 -z-10 border-red-600 min-h-screen"></div>
+                    <div class="line line-two border-l-[24px] absolute left-[52%] -top-14 -z-10 border-blue-800 h-screen"></div>
                 </figure>
                 <div class="mt-52">
-                    <h3 class="uppercase text-3xl text-gray-500 tracking-[0.4em]">Speedmaster</h3>
-                    <h2 class="font-bold text-9xl">Moonwatch.</h2>
+                    <div class="description">
+                        <h3 class="uppercase text-3xl text-gray-500 tracking-[0.4em]">Speedmaster</h3>
+                        <h2 class="font-bold text-9xl">Moonwatch.</h2>  
+                    </div>
                     <div class="flex justify-center pt-12">
-                        <button class="bg-red-500 p-3 rounded-md text-white uppercase font-bold text-sm">Order now</button>
+                        <button class="bg-red-500 p-3 rounded-md text-white uppercase font-bold text-sm cta">Order now</button>
                     </div>
                 </div>
             </div>
-            <nav class="flex flex-col gap-10">
+            <nav class="flex flex-col gap-10 social">
                 <button class="icon w-16"><i class="fa-brands fa-facebook-f fa-xl"></i></button>
                 <button class="icon"><i class="fa-brands fa-instagram fa-xl"></i></button>
                 <button class="icon"><i class="fa-brands fa-twitter fa-xl"></i></button>
             </nav>
         </article>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
